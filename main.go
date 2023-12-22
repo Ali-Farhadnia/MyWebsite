@@ -22,8 +22,8 @@ func main() {
 	// Create an autocert manager to handle TLS certificates
 	certManager := autocert.Manager{
 		Prompt:     autocert.AcceptTOS,
-		HostPolicy: autocert.HostWhitelist("yourdomain.com"), // Replace with your domain
-		Cache:      autocert.DirCache("/var/www/certs"),      // Directory outside the Go project for storing certificates
+		HostPolicy: autocert.HostWhitelist("alifarhadnia.com"), // Replace with your domain
+		Cache:      autocert.DirCache("/var/www/certs"),        // Directory outside the Go project for storing certificates
 	}
 
 	// Configure HTTPS server
