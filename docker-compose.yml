@@ -4,6 +4,4 @@ services:
   app:
     build: .
     ports:
-      - "443:443"
-    volumes:
-      - /var/www/certs:/var/www/certs
+      - "80:80"

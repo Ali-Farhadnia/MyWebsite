@@ -10,11 +10,8 @@ COPY . .
 # Build the Go application
 RUN go build -o main .
 
-# Expose port 443 for HTTPS
-EXPOSE 443
-
-# Set up a volume for certificate storage
-VOLUME ["/var/www/certs"]
+# Expose port 80 for HTTP (Cloudflare Flexible SSL)
+EXPOSE 80
 
 # Run the Go application
 CMD ["./main"]
